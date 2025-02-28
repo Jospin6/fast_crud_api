@@ -17,4 +17,3 @@ def test_create_item():
     response = client.post("/api/v1/items/", json=body)
     assert response.status_code == 200
     assert response.json() == body
-# Run the tests with the following command: pytest tests/test_items.py
